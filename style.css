@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body {
@@ -9,24 +9,6 @@ body {
 body {
   background-color: #111217;
   color: white;
-}
-h1 {
-  font-size: 4vw;
-}
-h2 {
-  font-size: 3vw;
-}
-h3 {
-  font-size: 2.5vw;
-}
-h4 {
-  font-size: 2vw;
-}
-h5 {
-  font-size: 1.5vw;
-}
-h6 {
-  font-size: 0.9vw;
 }
 .navbar {
   background-color: #1b1c23;
@@ -69,53 +51,6 @@ h6 {
   margin-left: 20px;
 }
 
-/* Style The Dropdown Button */
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  border-radius: 10px;
-  display: none;
-  position: absolute;
-  background-color: #1b1c23;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  right: 0;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #2a2c3d;
-  border-radius: 10px;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  z-index: 100;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-.dropbtn {
-  border-radius: 100px;
-  width: 35px;
-  height: 35px;
-}
 .main__img {
   position: relative;
   text-align: center;
@@ -134,7 +69,7 @@ h6 {
 
 .img__stuf img {
   width: 15vw;
-  height: 15vw;
+  height: 5vw;
 }
 .main__img__btn {
   /* margin-top: 15px; */
@@ -152,77 +87,109 @@ h6 {
   height: 100%;
 }
 .games__icons img {
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 10px;
+  height: 50px;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 100%;
 }
 .top__img____games__icons {
   display: grid;
   grid-template-columns: 1fr 49fr;
 }
-.tournaments__section {
-  margin: 2% 10%;
-}
-.tournaments__section div {
-  margin: auto;
-}
-.tournaments__section .card {
-  display: inline-block;
-  margin-left: 4%;
+
+.middle__tournament__Section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 10vw;
 }
 .card {
-  color: white;
+  display: inline-block;
+  margin-right: 10px;
   background-color: #111217;
 }
 .card img {
+  float: left;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-}
-.creator__logo img {
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
-}
-.card-body {
-  display: flex;
-}
-.card-body div {
-  margin-right: 20px;
-}
-
-.tournament__inner__top__2 h1 {
-  margin-bottom: 30px;
-}
-
-.game__box {
-  display: flex;
-  width: 70vw;
-  flex-wrap: wrap;
-}
-
-.game__img {
-  overflow: hidden;
-  margin: 10px;
-  position: relative;
-  border-radius: 10px;
-}
-
-.game h5 {
-  color: white;
-}
-.main__games__games__page {
-  margin: 10px auto;
 }
 .main__tournament__tournament__page {
-  margin: 10px auto;
+  margin: 0 10vw;
 }
-.tournament__box {
-  width: 70vw;
+.main__games__games__page {
+  margin: 0 10vw;
 }
-.tournament {
-  display: flex;
-  flex-wrap: wrap;
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
-img {
-  background-position: center center;
-  background-repeat: no-repeat;
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111217;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #000000;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+.right-nav {
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .img__stuf h6 {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  .right,
+  .center {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .side__games__line {
+    display: none;
+  }
+  .top__img____games__icons {
+    display: block;
+  }
 }
